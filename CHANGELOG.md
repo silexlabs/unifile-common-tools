@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [1.0.1] - 2020-10-25
 
 ## [1.0.0] - 2017-10-19
 ### Added
@@ -13,5 +13,5 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
  - Adds `mergeInfos` function
 
 
-[Unreleased]: https://github.com/silexlabs/unifile-common-tools/compare/v1.0.0...HEAD
+[1.0.1]: https://github.com/silexlabs/unifile-common-tools/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/silexlabs/unifile-common-tools/tree/v1.0.0

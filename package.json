@@ -1,6 +1,6 @@
 {
   "name": "unifile-common-tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common tools for Unifile connectors. Don't require it directly",
   "main": "lib/tools.js",
   "author": "Jean-Baptiste Richardet <jeanbaptiste.richardet@gmail.com> (https://github.com/JbIPS)",
@@ -12,17 +12,17 @@
     "cover": "nyc --reporter=lcov --check-coverage --branches 100 npm test",
     "cover:export": "cat ./coverage/lcov.info | codacy-coverage",
     "gen:docs": "jsdoc -R README.md -c jsdoc.json",
-    "preversion": "npm test && npm run lint && npm run gen:docs",
-    "version": "LIB_VERSION=$(env | grep npm_package_version | grep -v script | cut -d= -f2); sed -e \"s/Unreleased/$LIB_VERSION/\" -e \"s/HEAD/v$LIB_VERSION/\" -e \"/^## \\[$LIB_VERSION/ s/$/ - $(date +%Y-%m-%d)/\" CHANGELOG.md -i && git add docs CHANGELOG.md package.json",
-      "postversion": "git push --follow-tags"
+    "preversion": "npm test && npm run lint && npm run",
+    "version": "LIB_VERSION=$(env | grep npm_package_version | grep -v script | cut -d= -f2); sed -e \"s/Unreleased/$LIB_VERSION/\" -e \"s/HEAD/v$LIB_VERSION/\" -e \"/^## \\[$LIB_VERSION/ s/$/ - $(date +%Y-%m-%d)/\" CHANGELOG.md -i && git add CHANGELOG.md package.json",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/silexlabs/unifile-common-tools.git"
   },
   "engines": {
-    "node": "^6.2.2",
-    "npm": "^3.9.5"
+    "node": ">6.2.2",
+    "npm": ">3.9.5"
   },
   "files": [
     "package.json",
@@ -45,6 +45,6 @@
     "nyc": "*"
   },
   "dependencies": {
-    "bluebird": "^3.5.1"
+    "bluebird": "^3.7.2"
   }
 }

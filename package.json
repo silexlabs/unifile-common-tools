@@ -21,7 +21,7 @@
     "url": "https://github.com/silexlabs/unifile-common-tools.git"
   },
   "engines": {
-    "node": ">6.2.2",
+    "node": ">10",
     "npm": ">3.9.5"
   },
   "files": [

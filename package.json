@@ -6,7 +6,7 @@
   "author": "Jean-Baptiste Richardet <jeanbaptiste.richardet@gmail.com> (https://github.com/JbIPS)",
   "license": "MIT",
   "scripts": {
-    "test": "mocha test/*.js -R nyan",
+    "test": "mocha test/*.js",
     "watch": "mocha test/*.js -R min --watch",
     "lint": "eslint test/*.js lib/*.js",
     "cover": "nyc --reporter=lcov --check-coverage --branches 100 npm test",

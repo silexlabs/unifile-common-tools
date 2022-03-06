@@ -11,10 +11,7 @@
     "lint": "eslint test/*.js lib/*.js",
     "cover": "nyc --reporter=lcov --check-coverage --branches 100 npm test",
     "cover:export": "cat ./coverage/lcov.info | codacy-coverage",
-    "gen:docs": "jsdoc -R README.md -c jsdoc.json",
-    "preversion": "npm test && npm run lint && npm run",
-    "version": "LIB_VERSION=$(env | grep npm_package_version | grep -v script | cut -d= -f2); sed -e \"s/Unreleased/$LIB_VERSION/\" -e \"s/HEAD/v$LIB_VERSION/\" -e \"/^## \\[$LIB_VERSION/ s/$/ - $(date +%Y-%m-%d)/\" CHANGELOG.md -i && git add CHANGELOG.md package.json",
-    "postversion": "git push --follow-tags"
+    "gen:docs": "jsdoc -R README.md -c jsdoc.json"
   },
   "repository": {
     "type": "git",

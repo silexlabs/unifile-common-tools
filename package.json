@@ -39,9 +39,9 @@
   "devDependencies": {
     "chai": "*",
     "chai-as-promised": "^7.1.1",
-    "eslint": "*",
-    "mocha": "*",
-    "nyc": "*"
+    "eslint": "^6.8.0",
+    "mocha": "^7.2.0",
+    "nyc": "^15.1.0"
   },
   "dependencies": {
     "bluebird": "^3.7.2"

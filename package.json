@@ -1,6 +1,6 @@
 {
   "name": "unifile-common-tools",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Common tools for Unifile connectors. Don't require it directly",
   "main": "lib/tools.js",
   "author": "Jean-Baptiste Richardet <jeanbaptiste.richardet@gmail.com> (https://github.com/JbIPS)",
